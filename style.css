@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap");
+
+:root {
+  --font-family-Jost: "Jost", sans-serif;
+  --font-family-Anta: "Anta", sans-serif;
+  --font-family-Manrope: "Manrope", sans-serif;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-green: #00ffb3;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-family: var(--font-family-Manrope);
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.logodiv {
+  margin: 0 auto;
+  color: var(--color-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-Anta);
+  font-size: 2ch;
+  background-image: url(images/Animation-Logo.gif);
+  width: 720px;
+  height: 120px;
+}
+.logo {
+  display: none;
+}
+.kheaderdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+}
+.kheader {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kheader li {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 600px;
+}
+.kheader a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2ch;
+  color: var(--color-white);
+  transition: ease 0.4s;
+  width: 5rem;
+}
+.kheader a:hover {
+  font-size: 20px;
+  transition: ease 0.4s;
+  letter-spacing: 0.4rem;
+}
+.ksobre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45vh;
+  background: url(images/Khosmix.png) 50% 50% fixed no-repeat;
+  background-size: cover;
+}
+.Sobre {
+  gap: 50px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+.Sobre h2 {
+  letter-spacing: 3rem;
+  gap: 50px;
+  font-size: 50px;
+  font-family: var(--font-family-Anta);
+}
+.Sobre p {
+  gap: 50px;
+  font-size: 22px;
+  color: var(--color-green);
+  text-align: justify-all;
+  letter-spacing: 0.3rem;
+}
+.kprojetos {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70vh;
+}
+.kprojetos h3 {
+  font-size: 50px;
+  font-family: var(--font-family-Anta);
+  letter-spacing: 3rem;
+}
+.projetos {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.knetfli {
+  margin: 0 1rem;
+  background-color: red;
+  width: 220px;
+  height: 300px;
+}
