@@ -5,24 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khosmix studio</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <link rel="shortcut icon" type="imagex/png" href="images/Khosmix.ico" />
   </head>
   <body>
+    <div class="buttonscroll">
+      <article>
+        <button class="button" onclick="backTop();">
+          <img src="/images/Button.png" alt="" />
+        </button>
+      </article>
+    </div>
     <div class="kheaderdiv">
       <div class="logodiv">
-        <h1 class="logo">Khosmix Studio</h1>
+        <span style="--i: 1">K</span>
+        <span style="--i: 2">h</span>
+        <span style="--i: 3">o</span>
+        <span style="--i: 4">s</span>
+        <span style="--i: 5">m</span>
+        <span style="--i: 6">i</span>
+        <span style="--i: 7">x</span>
       </div>
       <div class="kheader">
         <li>
-          <a href="#">Início</a>
-          <a href="#">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Contato</a>
+          <a href="#">Social</a>
+          <a href="#sobrediv">Sobre</a>
+          <a href="#kprojetos">Projetos</a>
+          <a href="#contatos">Contato</a>
         </li>
       </div>
     </div>
-    <div class="ksobre">
+    <div id="sobrediv" class="ksobre">
       <section class="Sobre">
         <h2>Sobre nós</h2>
         <p>
@@ -34,7 +46,7 @@
       </section>
       <br />
     </div>
-    <div class="kprojetos">
+    <div id="kprojetos" class="kprojetos">
       <h3>Projetos</h3>
       <section class="projetos">
         <div class="knetfli">
@@ -126,7 +138,7 @@
             <p>Overlays</p>
           </div>
           <div class="klogoesub">
-            <p class="ftitles">Contato</p>
+            <p id="contatos" class="ftitles">Contato</p>
             <br />
             <p>khosmixstudio@gmail.com</p>
             <p>(00) 0 0000-0000</p>
@@ -154,5 +166,6 @@
         <div class="allrights">&copy 2024 - All rights reserveds</div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
