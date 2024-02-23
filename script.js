@@ -6,7 +6,7 @@ function getDistanceFromTheTop(element) {
 }
 
 function nativeScroll(distanceFromTheTop) {
-  window.scroll({
+  window.scrollTo({
     top: distanceFromTheTop,
     behavior: "smooth",
   });
@@ -23,7 +23,7 @@ menuLinks.forEach((link) => {
 });
 window.addEventListener("scroll", function () {
   let scroll = document.querySelector(".button");
-  scroll.classList.toggle("active", window.scrollY > 450);
+  scroll.classList.toggle("active", window.scrollY > 100);
 });
 function backTop() {
   window.scrollTo({
