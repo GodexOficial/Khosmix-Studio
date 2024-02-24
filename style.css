@@ -133,6 +133,23 @@ body {
   letter-spacing: 0.4rem;
 }
 /*------HEADER CONFIG------*/
+/*------SECTIONS HIDDEN CONFIG------*/
+.hidden {
+  opacity: 0;
+  filter: blur(50px);
+  transform: translateX(-100%);
+}
+.show {
+  transition: all 1s;
+  opacity: 1;
+  transform: translateX(0%);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+/*------SECTIONS HIDDEN CONFIG------*/
 /*------SEC SOBRE CONFIG------*/
 .ksobre {
   position: relative;
